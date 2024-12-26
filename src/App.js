@@ -18,6 +18,7 @@ const movie1 = {
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
+
   const searchMovies = async (title) => {
     const response = await fetch(`${apiUrl}&s=${title}`);
 
